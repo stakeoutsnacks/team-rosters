@@ -3718,12 +3718,12 @@ const GITHUB_CONFIG = {
   repo: 'team-rosters',               // e.g. 'team-roster'
   path: 'team_roster_builder_v2.html',  // path to this file inside the repo
   branch: 'main',
-  pat: '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'         // e.g. 'ghp_xxxxxxxxxxxxxxxxxxxx'
+  pat: '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'         // e.g. 'ghp_xxxxxxxxxxxxxxxxxxxx'
 };
 function hasGitHubConfig(){
   return !!(GITHUB_CONFIG.owner && GITHUB_CONFIG.owner !== 'stakeoutsnacks'
     && GITHUB_CONFIG.repo && GITHUB_CONFIG.repo !== 'team-rosters'
-    && GITHUB_CONFIG.pat && GITHUB_CONFIG.pat !== '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');
+    && GITHUB_CONFIG.pat && GITHUB_CONFIG.pat !== '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');
 }
 function b64EncodeUnicode(str){
   return btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g, (m,p1)=>String.fromCharCode('0x'+p1)));
